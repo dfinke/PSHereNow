@@ -1,0 +1,11 @@
+OrderDate,Region,Rep,Product,Units,UnitPrice,Revenue,WinRate
+2026-01-08,North America,Avery Stone,PowerShell Workshop,18,249,4482,0.82
+2026-01-14,Europe,Mina Clark,Automation Audit,6,1200,7200,0.64
+2026-02-03,APAC,Jon Reed,AI Enablement Kit,11,799,8789,0.71
+2026-02-19,North America,Sofia Vega,PowerShell Workshop,24,249,5976,0.88
+2026-03-02,Latin America,Eli Grant,Automation Audit,4,1200,4800,0.58
+2026-03-18,Europe,Priya Shah,AI Enablement Kit,9,799,7191,0.69
+2026-04-06,APAC,Theo Martin,Runbook Refresh,14,420,5880,0.76
+2026-04-21,North America,Maya Chen,AI Enablement Kit,16,799,12784,0.84
+2026-05-04,Europe,Nora Patel,Runbook Refresh,19,420,7980,0.79
+2026-05-08,Latin America,Imani Cole,PowerShell Workshop,12,249,2988,0.73
