@@ -14,7 +14,7 @@
     AliasesToExport      = @('Publish-HereNow')
     PrivateData          = @{
         PSData = @{
-            Tags       = @('here-now', 'publishing', 'static-site')
+            Tags       = @('here-now', 'publishing', 'static-site', 'powershell')
             ProjectUri = 'https://github.com/dfinke/PSHereNow'
             LicenseUri = 'https://github.com/dfinke/PSHereNow/blob/main/LICENSE'
         }
