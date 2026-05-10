@@ -2,6 +2,17 @@
 
 PowerShell helpers for publishing static files and folders to [here.now](https://here.now/docs).
 
+## Free, no API key required
+
+here.now supports free anonymous publishing. PSHereNow uses that flow by default, so you can publish without an account, sign-in, or API key:
+
+```powershell
+Publish-HereNowSite .\examples\hello-site
+```
+
+Anonymous sites expire after 24 hours. The module saves the one-time claim URL to `.herenow/<slug>.claim.json` by default so you can claim the site later if you want to keep it.
+This repo ignores `.herenow/` folders so claim tokens do not accidentally get committed.
+
 ## Load the module
 
 From this directory:
@@ -10,21 +21,16 @@ From this directory:
 Import-Module .\PSHereNow.psd1 -Force
 ```
 
-Optional, for permanent authenticated sites:
+For authenticated publishing, `Publish-HereNowSite` reads API keys from:
 
 ```powershell
 Set-HereNowApiKey 'hn_live_...'
 ```
 
-`Publish-HereNowSite` also reads API keys from:
-
 1. `-ApiKey`
 2. `$env:HERENOW_API_KEY`
 3. `$env:HERE_NOW_API_KEY`
 4. `~/.herenow/credentials`
-
-If no API key is found, it publishes anonymously. Anonymous sites expire after 24 hours. The module saves the one-time claim URL to `.herenow/<slug>.claim.json` by default.
-This repo ignores `.herenow/` folders so claim tokens do not accidentally get committed.
 
 ## Publish
 
